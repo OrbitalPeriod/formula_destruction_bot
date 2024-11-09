@@ -1,0 +1,11 @@
+[package]
+name = "formula_destruction_bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+dotenv = "0.15.0"
+sqlx = {version = "0.8.2", features = ["runtime-tokio", "postgres", "chrono"]}
+tokio = { version = "1.41.1", features = ["full"] }
+tokio-cron-scheduler = "0.13.0"
